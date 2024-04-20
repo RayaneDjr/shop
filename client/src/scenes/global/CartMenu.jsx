@@ -70,6 +70,7 @@ const CartMenu = () => {
                     />
                   </Box>
                   <Box flex='1 1 60%'>
+                    {/* AMOUNT */}
                     <FlexBox mb='5px'>
                       <Typography fontWeight='bold'>
                         {item.attributes.name}
@@ -101,6 +102,7 @@ const CartMenu = () => {
                           <AddIcon />
                         </IconButton>
                       </Box>
+                      {/* PRICE */}
                       <Typography fontWeight='bold'>
                         {item.attributes.price}€
                       </Typography>
