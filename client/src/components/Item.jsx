@@ -57,8 +57,7 @@ const Item = ({ item, width }) => {
               alignItems='center'
               backgroundColor={shades.neutral[100]}
               borderRadius='3px'>
-              <IconButton
-                onClick={() => setCount(Math.max(count(count - 1, 1)))}>
+              <IconButton onClick={() => setCount(Math.max(count - 1, 1))}>
                 <RemoveIcon />
               </IconButton>
               <Typography color={shades.primary[300]}>{count}</Typography>
@@ -83,7 +82,7 @@ const Item = ({ item, width }) => {
         <Typography variant='subtitle?' color={neutral.dark}>
           {category
             .replace(/(A-Z])/g, " $1")
-            .replace(/^./, (str) => str.toUppuerCase())}
+            .replace(/^./, (str) => str.toUpperCase())}
         </Typography>
         <Typography>{name}</Typography>
         <Typography fontWeight='bold'>{price}€</Typography>
