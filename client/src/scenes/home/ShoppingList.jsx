@@ -59,7 +59,7 @@ const ShoppingList = () => {
             flexWrap: "wrap",
           },
         }}>
-        <Tab label='ALL' value='all' />
+        <Tab label='TOUT' value='all' />
         <Tab label='NOUVELLES ARRIVEES' value='newArrivals' />
         <Tab label='MEILLEURES VENTES' value='bestSellers' />
         <Tab label='LES MIEUX NOTES' value='topRated' />
